@@ -5,7 +5,6 @@ get 'connect4' => 'connect4#connect4'
 post 'win' => 'games#win'
 get 'drop_the_coin' => 'games#connect4'
 get 'games/tictactoe' => 'others_controller#simple_game'
-get 'inventory' => 'games#inventory'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
