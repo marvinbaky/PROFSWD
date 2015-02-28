@@ -1,0 +1,77 @@
+html, body{
+	height:100%;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+
+.banner{
+	width: 100%;
+	height: 50px;
+	background: black;
+	position:fixed;
+	z-index:1;
+}
+
+#header{
+	top:0px;
+}
+
+#footer{
+	bottom:0px;
+}
+
+#slideshow #viewPort {
+	width:343px;
+	height:257px;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 5%;
+}
+
+.slide{
+	margin:0;
+	padding:0;
+	width:auto; 
+	height:257px;
+	float:left;
+}
+
+img{
+	width: auto;
+	height: 257px;
+}
+
+.slide{
+	float:left;
+}
+
+#right{
+	float:right;
+}
+
+button{
+	border:0;
+	border-radius:2px;
+}
+
+#buttons{
+	position:absolute;
+	margin-top:32%;
+	height:20px;
+	width:343px;
+}
+
+#text{
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	height:100%;
+	margin-bottom: 10%;
+	text-align:justify;
+}

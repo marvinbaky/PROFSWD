@@ -1,0 +1,2 @@
+module NewGameEquipmentHelper
+end

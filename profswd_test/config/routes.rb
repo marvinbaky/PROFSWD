@@ -2,8 +2,13 @@ Rails.application.routes.draw do
 
 root 'application#index'
 get 'connect4' => 'connect4#connect4'
-post 'win' => 'games#win'
-get 'drop_the_coin' => 'games#connect4'
+
+get 'inventory' => 'games#inventory'
+
+get 'game_equipment/new' => 'games#new_game_equipment'
+post 'game_equipment' => 'games#create_game_equipment'
+post 'game_equipment/delete' => 'games#delete_game_equipment'
+
 get 'games/tictactoe' => 'others_controller#simple_game'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

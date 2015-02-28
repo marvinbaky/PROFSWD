@@ -1,0 +1,19 @@
+<form method='get'>
+	<div> search game equipment name </div>
+	<input type='text' name ='name_search'/>
+	<input type ='submit' value ='Submit'/>
+</form>
+
+<%if @name_search.present? %>
+	<% @results_item.each do |x| %>
+		<div> name: <%= x.name %> weight <%=x.weight %> 
+			<form method ='post' action = 'game_equipment/delete'> 
+				<input type = 'hidden' name = <%= x.id %>/>
+				<input type = 'submit' value = 'delete'/> 
+			</form>
+		</div>
+	<% end %>
+<% end %>
+
+<%if @name_search.present? %>
+<% end %>
