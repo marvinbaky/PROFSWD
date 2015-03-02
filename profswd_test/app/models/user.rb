@@ -11,4 +11,8 @@ class User < ActiveRecord::Base
 		new_user
 	end
 	
+	def self.authenticate(username, password)
+		user = User.where(username: username).first
+		if user.present? && user.password_hash == BCrypt::
+	
 end
